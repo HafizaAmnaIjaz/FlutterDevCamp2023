@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:travel_app/ui/travelerui.dart';
+import 'package:plant_shop_app/ui_screen/splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      home: const SplashScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
