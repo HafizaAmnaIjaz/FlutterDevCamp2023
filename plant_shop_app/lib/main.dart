@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:plant_shop_app/Add_customer_api/customer.dart';
+import 'package:plant_shop_app/Add_customer_api/home_page.dart';
 import 'package:plant_shop_app/ui_screen/splash.dart';
 
 void main() {

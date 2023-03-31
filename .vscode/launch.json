@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "plant_shop_app",
+            "cwd": "plant_shop_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "plant_shop_app (profile mode)",
+            "cwd": "plant_shop_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "plant_shop_app (release mode)",
+            "cwd": "plant_shop_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "travel_app",
+            "cwd": "travel_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "travel_app (profile mode)",
+            "cwd": "travel_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "travel_app (release mode)",
+            "cwd": "travel_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

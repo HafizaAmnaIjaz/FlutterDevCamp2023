@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:plant_shop_app/Add_customer_api/home_page.dart';
 import 'package:plant_shop_app/inc/images.dart';
 import 'package:plant_shop_app/ui_screen/hometabs/trees.dart';
 
@@ -64,7 +65,7 @@ class _TreeCartState extends State<TreeCart> {
             SizedBox(
               height: 40,
             ),
-            addCartItems(Trees()),
+            addCartItems(HomePage()),
           ],
         )),
       ),
@@ -138,24 +139,30 @@ class _TreeCartState extends State<TreeCart> {
 
   addCartItems(function) {
     return Container(
-        // height: 100,
-        margin: EdgeInsets.only(left: 10, right: 10),
-        height: MediaQuery.of(context).size.height / 12.0,
-        width: double.infinity,
-        // color: Colors.blue,
-        child: Card(
-            elevation: 2,
-            color: Colors.green,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(50),
-            ),
-            child: Center(
-                child: Text(
-              'Add Cart',
-              style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white),
-            ))));
+      // height: 100,
+      margin: EdgeInsets.only(left: 10, right: 10),
+      height: MediaQuery.of(context).size.height / 12.0,
+      width: double.infinity,
+      // color: Colors.blue,
+      child: GestureDetector(
+          onTap: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: ((context) => function)));
+          },
+          child: Card(
+              elevation: 2,
+              color: Colors.green,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(50),
+              ),
+              child: Center(
+                  child: Text(
+                'Add Cart',
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              )))),
+    );
   }
 }
